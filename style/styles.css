@@ -12,7 +12,7 @@
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1440px;
     margin: auto;
 }
 
@@ -67,10 +67,10 @@ a {
 
 }
 
-.bannar-content
-{
+.bannar-content {
     width: 55%;
 }
+
 .bannar-title {
     color: var(--font-color);
     font-size: 3.4rem;
@@ -106,79 +106,187 @@ a {
     background-size: contain;
     background-repeat: no-repeat;
 }
-.bannar-image
-{
+
+.bannar-image {
     width: 45%;
     padding-left: 30px;
 }
+
 .bannar-image img {
     width: 100%;
 }
 
+/* main section style here */
 
-
-.hide{
-    display: none;
+/* sponsers section style here */
+.cop-logo {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    gap: 30px;
+    justify-items: center;
+    border-top: 1px solid #3a3a3a25;
+    border-bottom: 1px solid #3a3a3a25;
+    padding: 20px 0px;
+    margin: 70px 0px;
 }
+
+.cop-logo img {
+    width: 70%;
+}
+
+/* popular product section style */
+
+.popular-product {
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 80px;
+    justify-items: center;
+}
+
+.card {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.product-name {
+    color: #18191F;
+    font-size: 28px;
+    font-weight: 500;
+    padding-top: 16px;
+    padding-bottom: 6px;
+}
+
+.product-price {
+    color: #000000de;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.star i {
+    font-size: 16px;
+    color: #FB8200;
+}
+
+.product-description {
+    color: #787885;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.252px;
+    width: 196px;
+    padding-top: 5px;
+}
+
+/* .hide{
+    display: none;
+} */
 /* responsiv media query */
 
 /* for mobile devise */
 
 @media screen and (max-width:576px) {
-    header{
+
+    header,
+    main {
         padding: 0px 20px;
     }
-    .nav{
+
+    .nav {
         flex-direction: column;
         gap: 30px;
-
     }
+
     .menu-item {
-       display: none;
+        display: none;
     }
 
-    .bannar-container{
+    .bannar-container {
         flex-direction: column-reverse;
         gap: 30px;
     }
+
     .bannar-content,
     .bannar-description,
-    .bannar-image{
+    .bannar-image {
         width: 100%;
     }
-    .bannar-content{
+
+    .bannar-content {
         text-align: center;
+    }
+
+    .cop-logo {
+        grid-template-columns: repeat(4, 1fr);
+        align-self: center;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    .cop-logo img {
+        width: 100%;
+    }
+
+    .popular-product {
+        padding-bottom: 100px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 80px;
+        justify-items: center;
     }
 }
 
 /* for tabe and medium devise */
 @media screen and (min-width:577px) and (max-width:768px) {
-    header{
+
+    header,
+    main {
         padding: 0px 50px;
     }
-    .nav{
+
+    .nav {
         flex-direction: column;
         gap: 30px;
 
     }
-    .bannar-container{
+
+    .bannar-container {
         flex-direction: column-reverse;
         gap: 30px;
     }
+
     .bannar-content,
     .bannar-description,
-    .bannar-image{
+    .bannar-image {
         width: 100%;
     }
-    .bannar-content{
+
+    .bannar-content {
         text-align: center;
+    }
+    .popular-product {
+        padding-bottom: 100px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 80px;
+        justify-items: center;
     }
 }
 
 /* for desktop */
-@media screen and (min-width:769px) and (max-width:992px) {
-    header{
+@media screen and (min-width:769px) and (max-width:1439px) {
+
+    header,
+    main {
         padding: 0px 100px;
     }
-  
+
 }
