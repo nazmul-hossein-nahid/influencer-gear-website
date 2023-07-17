@@ -195,25 +195,29 @@ a {
 }
 
 /* gear section here */
-.gear{
+.gear {
     display: flex;
     gap: 100px;
     align-items: center;
     margin-bottom: 100px;
 }
-.gear-imag img{
+
+.gear-imag img {
     width: 100%;
 }
-.gear-text{
+
+.gear-text {
     width: 70%;
 }
-.gear-title{
+
+.gear-title {
     color: #0A0826;
     font-size: 38px;
     font-style: normal;
     font-weight: 700;
 }
-.gear-description{
+
+.gear-description {
     color: #6C6C6C;
     font-size: 16px;
     font-weight: 400;
@@ -221,6 +225,7 @@ a {
     width: 55%;
     margin: 16px 0px;
 }
+
 .gear-btn {
     padding: 10px 24px;
     color: #fff;
@@ -229,6 +234,13 @@ a {
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
+}
+
+/* footer section styles */
+.footer {
+    width: 100%;
+    height: 239px;
+    background-color: var(--secondery-color);
 }
 
 
@@ -251,8 +263,7 @@ a {
     }
 
     .bannar-container,
-    .gear
-     {
+    .gear {
         flex-direction: column-reverse;
         gap: 30px;
     }
@@ -260,14 +271,12 @@ a {
     .bannar-content,
     .bannar-description,
     .bannar-image,
-    .gear-description
-    {
+    .gear-description {
         width: 100%;
     }
 
     .bannar-content,
-    .gear-text
-    {
+    .gear-text {
         text-align: center;
     }
 
